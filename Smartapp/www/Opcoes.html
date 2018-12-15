@@ -1,0 +1,46 @@
+<div class="page" onload="preencheDadosServidor();">
+        
+  <div class="content blue-800 row-center align-center padding has-header">
+        
+    <div class="col-10"></div>
+    <div class="col">
+        <h1 style="font-family: 'Do Hyeon', sans-serif; font-size: 30px;">Opções</h1>
+        <div class="space-big"></div>
+        <div class="list white radius">
+          <div class="item">
+              <div class="row">
+                  <div class="col-80">
+                      <h3>IP Servidor:</h3>
+                    </div>
+                    <div class="col-10"></div>
+                    <div class="col">
+                        <input id="server-ip" type="text">
+                    </div>
+              </div>
+          </div>
+          <div class="item">
+                <div class="row">
+                    <div class="col-80">
+                        <h3>Porta Servidor:</h3>
+                      </div>
+                      <div class="col-10"></div>
+                      <div class="col">
+                          <input id="server-port" type="text">
+                      </div>
+                </div>
+            </div>
+          <div class="item">
+            <button id="btn-gerarDados" class="blue-600 full radius icon ion-loop" onclick="salvarDadosServidor()">Salvar</button>
+          </div>
+          <div class="item">
+              <button id="btn-voltar" class="blue-600 full radius icon ion-android-arrow-back" onclick="backPage()">Retonar</button>
+            </div>
+        </div>
+      </div>
+      <div class="col-10"></div>
+    </div>
+    <script type="text/javascript" src="js/gerarDados.js"></script> 
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+  </div>
+</div>

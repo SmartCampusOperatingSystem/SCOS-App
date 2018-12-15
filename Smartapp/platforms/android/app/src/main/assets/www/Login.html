@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/fonts.css">
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Apache Cordova</title>
+    </head>
+    <body>
+      <div class="header grey-500">
+        <h1>Fazer Login</h1>
+      </div>
+      <div class="content blue-800 row-center align-center padding has-header">
+        
+        <div class="col-10"></div>
+        <div class="col">
+            <h1 style="font-family: 'Do Hyeon', sans-serif; font-size: 30px;">ServiceTasks</h1>
+            <div class="space-big"></div>
+            <div class="list white radius">
+              <div class="item">
+                <input id="email" type="email" placeholder="Digite seu e-mail">
+              </div>
+              <div class="item">
+                <input id="senha" type="password" placeholder="Digite sua senha">
+              </div>
+              <div class="item">
+                <button id="btn-login" class="blue-600 full radius" onclick="fazerLogin()">Fazer Login</button>
+              </div>
+              <div class="item">
+                <h2>OU</h2>
+              </div>
+              <div class="item">
+                <button id="btn-cadastro" class="blue-600 full radius" onclick="openPage('Cadastro')">Fazer Cadastro</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-10"></div>
+        </div>
+         
+      </div>
+
+      
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+      <script type="text/javascript" src="js/Cadastro.js"></script>
+      <script type="text/javascript" src="js/Menu.js"></script>  
+    </body>
+</html>

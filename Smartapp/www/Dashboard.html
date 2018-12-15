@@ -1,0 +1,37 @@
+<div class="page">
+    <div class="header blue-700">
+        <button class="left icon ion-android-arrow-back" onclick="backPage()"></button>
+        <h1 style="font-family: 'Do Hyeon', sans-serif; font-size: 30px;">Dashboard</h1>
+        <button class="right icon ion-refresh" onclick="montarGraficos();"></button>
+    </div>
+    <div class="content blue-700 padding has-header">
+      <div class="col-10"></div>
+      
+      <div class="space"></div>
+      <div class="col">
+          <div class="list radius">
+              <div class="item blue">
+                  <div class="row">
+                      <div class="col-30">
+                          <h3>Data:</h3>
+                        </div>
+                        <div class="col-10"></div>
+                        <div class="col-10 white">
+                            <input id="data" type="date">
+                        </div>
+                  </div>
+              </div>
+          </div>
+          <div class="space"></div>
+          <p class="padding text-big text-light align-center">Temperatura</p>
+          <div class="blue-700 chartist-white" id="chartist-line"></div>
+          <p class="padding text-big text-light align-center">Umidade</p>
+          <div class="purple chartist-white" id="chartist-bar"></div>
+          
+          <div id="chartist-pie"></div>
+      </div>
+
+      <div class="col-10"></div>
+
+    </div>
+</div>
